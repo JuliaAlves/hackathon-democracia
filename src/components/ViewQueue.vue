@@ -9,7 +9,7 @@
             </v-btn>
         </div>
         <v-navigation-drawer
-            style="z-index: 20;"
+            style="z-index: 20; width: 380px;"
             v-model="drawer"
             app
             right
@@ -29,11 +29,11 @@
                     v-for="({ own, checksum, message }, index) in queue"
                     :key="index"
                 >
-                    <v-card :class="own ? 'own' : ''" style="margin: 8px 0;">
+                    <v-card :class="own ? 'own' : ''" style="margin: 8px 0; width: 100%;">
                         <v-card-text>
                             <v-row>
                                 <v-col class="col-9">
-                                    {{ checksum }}
+                                    <kbd>{{ checksum }}</kbd>
                                 </v-col>
                                 <v-col class="col-3">
                                     <span style="color: #2988B1;">#{{ index + 1 }}</span>
