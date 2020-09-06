@@ -51,7 +51,7 @@
                     </v-card>
                 </v-list-item>
             </v-list>
-            <v-btn color="warning" @click="next">Próximo da fila</v-btn>
+            <v-btn color="warning" v-if="queue.length > 0" @click="next">Próximo da fila</v-btn>
         </v-navigation-drawer>
     </v-row>
 </template>
