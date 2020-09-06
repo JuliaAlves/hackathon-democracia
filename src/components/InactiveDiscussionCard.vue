@@ -5,12 +5,12 @@
         <v-list dense nav class="py-0">
           <v-list-item two-line>
             <v-list-item-avatar>
-              <img :src="data.avatar">
+              <img :src="discussion.photo">
             </v-list-item-avatar>
-            <span class="name">{{ data.name }}</span>
+            <span class="name">{{ discussion.name }}</span>
           </v-list-item>
           <v-list-item>
-            <p class="description">{{data.description}}</p>
+            <p class="description">{{discussion.description}}</p>
           </v-list-item>
         </v-list>
       </v-col>
@@ -25,7 +25,7 @@
               <v-avatar left>
                 <v-icon small>mdi-thumb-up</v-icon>
               </v-avatar>
-              {{data.likes}}
+              {{discussion.likes}}
             </v-chip>
           </v-list-item>
           <v-list-item>
@@ -37,7 +37,7 @@
               <v-avatar left>
                 <v-icon small>mdi-thumb-down</v-icon>
               </v-avatar>
-              {{data.dislikes}}
+              {{discussion.dislikes}}
             </v-chip>
           </v-list-item>
         </v-list>
@@ -50,7 +50,7 @@
   export default {
     name: 'InactiveDiscussionCard',
     props: {
-      data: {
+      discussion: {
         type: Object,
         required: true
       }
