@@ -1,5 +1,5 @@
 <template>
-  <v-container class="council-body">
+  <div class="council-body">
         <v-row class="justify-center">
             <div class="my-2">
                 <v-btn small color="warning" dark>{{queueSize}} pessoas na fila...</v-btn>
@@ -15,7 +15,7 @@
                 </v-col>
             </v-row>
         </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -53,12 +53,13 @@
 
 <style scoped>
 .active {
-    width: 90%;
+    margin-top: 10px;
+    width: 80%;
 }
 
 .inactive {
     margin-top: 10px;
-    width: 80%;
+    width: 70%;
 }
 
 .council-body {

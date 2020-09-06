@@ -1,7 +1,7 @@
 <template>
     <v-card class="card">
         <v-row>
-            <v-col class="col-8">
+            <v-col class="col-10">
                 <v-list class="py-0">
                     <v-list-item>
                         <span class="discussion"> Em discussão </span>
@@ -22,13 +22,19 @@
                     </v-list-item>
                 </v-list>
             </v-col>
-            <v-col class="col-4 d-flex justify-center align-center">
-                <v-btn icon>
-                    <v-icon size="36px">mdi-thumb-up</v-icon>
-                </v-btn>
-                <v-btn icon>
-                    <v-icon size="36px">mdi-thumb-down</v-icon>
-                </v-btn>
+            <v-col class="col-2 d-flex justify-center align-center">
+                <v-row>
+                    <v-col class="col-4">
+                        <v-btn icon>
+                            <v-icon size="36px">mdi-thumb-up</v-icon>
+                        </v-btn>
+                    </v-col>
+                    <v-col class="col-2">
+                        <v-btn icon>
+                            <v-icon size="36px">mdi-thumb-down</v-icon>
+                        </v-btn>
+                    </v-col>
+                </v-row>
             </v-col>
         </v-row>
     </v-card>

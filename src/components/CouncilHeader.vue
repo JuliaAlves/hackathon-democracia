@@ -1,5 +1,5 @@
 <template>
-  <v-container class="council-header">
+  <div class="council-header">
     <v-row>
         <span class="council-name"> {{ name }} </span>
     </v-row>
@@ -8,7 +8,7 @@
           {{ description }}
         </span>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>

@@ -7,10 +7,10 @@
             <v-list-item-avatar>
               <img :src="data.avatar">
             </v-list-item-avatar>
-            <span class="font-weight-black">{{ data.name }}</span>
+            <span class="name">{{ data.name }}</span>
           </v-list-item>
           <v-list-item>
-            <p>{{data.description}}</p>
+            <p class="description">{{data.description}}</p>
           </v-list-item>
         </v-list>
       </v-col>
@@ -66,5 +66,18 @@
 
   .v-list {
     background: transparent;
-}
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 19px;
+    color: #747474;
+    text-align: left !important;
+  }
+
+  .name {
+    color: #747474;
+    font-size: 20px;
+    font-weight: bold;
+  }
 </style>
