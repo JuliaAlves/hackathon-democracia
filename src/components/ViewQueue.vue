@@ -51,6 +51,7 @@
                     </v-card>
                 </v-list-item>
             </v-list>
+            <v-btn color="warning" @click="next">Próximo da fila</v-btn>
         </v-navigation-drawer>
     </v-row>
 </template>
@@ -66,7 +67,12 @@
         },
         data: () => ({
             drawer: false
-        })
+        }),
+        methods: {
+          next () {
+            this.$emit('next')
+          }
+        }
     }
 </script>
 

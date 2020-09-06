@@ -1,6 +1,6 @@
 <template>
     <div class="council-body">
-        <ViewQueue :queue="queue" />
+        <ViewQueue :queue="queue" @next="nextOnQueue"/>
         <div class="active">
             <ActiveDiscussionCard :discussion="current" />
         </div>
@@ -42,12 +42,34 @@
                         dislikes: 102,
                         comments: [
                           { text: 'ta falando nada com nada minha filha', owner: false , author: "fulano"},
-                        ]
+                        ],
+                        own: true
                 },
                 queue: [
-                    { checksum: 'fc3ff98e8c6a0d3087d515c0473f8677' },
-                    { checksum: 'c2e285cb33cecdbeb83d2189e983a8c0' },
-                    { checksum: '459b9511a7f650ebd327889c45cc4e9b' }
+                    {
+                        name: 'José',
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        photo: 'https://randomuser.me/api/portraits/women/81.jpg',
+                        likes: 204,
+                        dislikes: 102,
+                        comments: [
+                            { text: 'ta falando nada com nada minha filha', owner: false , author: "fulano"},
+                        ],
+                        checksum: 'fc3ff98e8c6a0d3087d515c0473f8677',
+                        own: false
+                    },
+                    {
+                        name: 'Kleber',
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        photo: 'https://randomuser.me/api/portraits/women/81.jpg',
+                        likes: 204,
+                        dislikes: 102,
+                        comments: [
+                            { text: 'ta falando nada com nada minha filha', owner: false , author: "fulano"},
+                        ],
+                        checksum: 'c2e285cb33cecdbeb83d2189e983a8c0',
+                        own: false
+                    }
                 ]
             }
         },
@@ -60,9 +82,20 @@
                 crypto.getRandomValues(array);
                 this.queue.push({
                     own: true,
+                    name: discussion.name,
+                    photo: discussion.photo,
+                    likes: discussion.likes,
+                    dislikes: discussion.dislikes,
+                    description: discussion.description,
+                    comments: discussion.comments,
                     message: discussion.description,
                     checksum: [...array].map(n => n.toString(16)).join('')
                 })
+            },
+            nextOnQueue () {
+                this.past.splice(0, 0, JSON.parse(JSON.stringify(this.current)));
+                this.current = JSON.parse(JSON.stringify(this.queue[0]))
+                this.queue.splice(0, 1);
             }
         },
     }

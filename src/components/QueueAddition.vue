@@ -42,7 +42,10 @@ export default {
     data: () => ({
         bundle: {
             name: '',
-            description: ''
+            description: '',
+            photo: 'https://randomuser.me/api/portraits/women/81.jpg',
+            likes: 0,
+            dislikes: 0,
         },
         isDialogOpen: false
     }),
@@ -54,7 +57,7 @@ export default {
         },
         cancel () {
             this.isDialogOpen = false
-            this.$emit('cancel', this.bundle)
+            this.$emit('cancel')
             this.reset()
         },
         reset() {
