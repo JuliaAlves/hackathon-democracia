@@ -15,6 +15,16 @@
                 </v-row>
             </v-container>
         </v-main>
+
+        <v-btn
+            fixed
+            dark
+            fab
+            bottom
+            right
+            color="#FD953A">
+            <v-icon>mdi-plus</v-icon>
+        </v-btn>
     </v-app>
 </template>
 

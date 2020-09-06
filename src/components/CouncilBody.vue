@@ -1,5 +1,10 @@
 <template>
   <v-container class="council-body">
+        <v-row class="justify-center">
+            <div class="my-2">
+                <v-btn small color="warning" dark>{{queueSize}} pessoas na fila...</v-btn>
+            </div>
+        </v-row>
         <ActiveDiscussionCard :discussion="current" />
         <v-row v-for="(card, index) of past" :key="index">
             <v-col class="col-12 d-flex flex-column align-center">
@@ -30,7 +35,8 @@
                         photo: 'https://randomuser.me/api/portraits/women/81.jpg',
                         likes: 204,
                         dislikes: 102
-                }, 
+                },
+                queueSize: 1729
             }
         },
         methods: {
