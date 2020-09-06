@@ -26,10 +26,10 @@
                 </v-list-item>
                 <v-divider style="margin-bottom: 8px;" />
                 <v-list-item
-                    v-for="(checksum, index) in queue"
+                    v-for="({ own, checksum, message }, index) in queue"
                     :key="index"
                 >
-                    <v-card style="margin: 8px 0;">
+                    <v-card :class="own ? 'own' : ''" style="margin: 8px 0;">
                         <v-card-text>
                             <v-row>
                                 <v-col class="col-9">
@@ -39,6 +39,14 @@
                                     <span style="color: #2988B1;">#{{ index + 1 }}</span>
                                 </v-col>
                             </v-row>
+                            <template v-if="own">
+                                <v-divider />
+                                <v-row>
+                                    <v-col class="col-12">
+                                        <p>{{ message }}</p>
+                                    </v-col>
+                                </v-row>
+                            </template>
                         </v-card-text>
                     </v-card>
                 </v-list-item>
@@ -61,3 +69,9 @@
     })
   }
 </script>
+
+<style scoped>
+    .own {
+        background-color: #CEF0FF;
+    }
+</style>

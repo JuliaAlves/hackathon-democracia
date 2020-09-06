@@ -41,17 +41,25 @@
                         likes: 204,
                         dislikes: 102
                 },
-                queue: []
+                queue: [
+                    { checksum: 'fc3ff98e8c6a0d3087d515c0473f8677' },
+                    { checksum: 'c2e285cb33cecdbeb83d2189e983a8c0' },
+                    { checksum: '459b9511a7f650ebd327889c45cc4e9b' }
+                ]
             }
         },
         methods: {
             onScroll (e) {
                 this.offsetTop = e.target.scrollTop
             },
-            addToQueue() {
+            addToQueue(discussion) {
                 var array = new Uint32Array(4);
                 crypto.getRandomValues(array);
-                this.queue.push([...array].map(n => n.toString(16)).join(''))
+                this.queue.push({
+                    own: true,
+                    message: discussion.description,
+                    checksum: [...array].map(n => n.toString(16)).join('')
+                })
             }
         },
     }
