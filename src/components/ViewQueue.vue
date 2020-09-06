@@ -5,7 +5,7 @@
                 @click.stop="drawer = !drawer"
                 small color="warning" dark
             >
-                {{queueSize}} pessoas na fila...
+                {{ queue.length }} pessoas na fila...
             </v-btn>
         </div>
         <v-navigation-drawer
@@ -21,14 +21,26 @@
             nav
             class="py-0"
             >
-                <v-divider></v-divider>
-                <v-spacer />
+                <v-list-item>
+                    <span class="council-name">Discussões na fila</span>
+                </v-list-item>
+                <v-divider style="margin-bottom: 8px;" />
                 <v-list-item
-                    v-for="(item, index) in queue"
+                    v-for="(checksum, index) in queue"
                     :key="index"
-                    link
                 >
-                    <v-list-item-title class="council-title">{{ item.checksum }}</v-list-item-title>
+                    <v-card style="margin: 8px 0;">
+                        <v-card-text>
+                            <v-row>
+                                <v-col class="col-9">
+                                    {{ checksum }}
+                                </v-col>
+                                <v-col class="col-3">
+                                    <span style="color: #2988B1;">#{{ index + 1 }}</span>
+                                </v-col>
+                            </v-row>
+                        </v-card-text>
+                    </v-card>
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
@@ -39,8 +51,12 @@
   export default {
     name: 'ViewQueue',
     data: () => ({
-        queueSize: 1729,
-        drawer: false
+        drawer: false,
+        queue: [
+            'fc3ff98e8c6a0d3087d515c0473f8677',
+            'c2e285cb33cecdbeb83d2189e983a8c0',
+            '459b9511a7f650ebd327889c45cc4e9b'
+        ]
     })
   }
 </script>
