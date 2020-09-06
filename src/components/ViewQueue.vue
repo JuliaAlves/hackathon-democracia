@@ -39,6 +39,7 @@
   export default {
     name: 'ViewQueue',
     data: () => ({
+        queueSize: 1729,
         drawer: false
     })
   }

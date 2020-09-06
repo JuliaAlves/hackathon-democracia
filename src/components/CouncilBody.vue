@@ -38,8 +38,7 @@
                         photo: 'https://randomuser.me/api/portraits/women/81.jpg',
                         likes: 204,
                         dislikes: 102
-                },
-                queueSize: 1729
+                }
             }
         },
         methods: {
