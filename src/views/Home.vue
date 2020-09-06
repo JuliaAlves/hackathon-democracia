@@ -1,19 +1,21 @@
 <template>
-    <div class="home">
+    <v-app id="home">
         <Navigation />
-        <v-container>
-            <v-row>
-                <v-col class="col-12">
-                    <CouncilHeader class="header"/>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col class="col-12">
-                    <CouncilBody class="body"/>
-                </v-col>
-            </v-row>
-        </v-container>
-    </div>
+        <v-main>
+            <v-container class="fill-height" style="padding: 0;" fluid>
+                <v-row>
+                    <v-col class="col-12">
+                        <CouncilHeader class="header"/>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col class="col-12">
+                        <CouncilBody class="body"/>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-main>
+    </v-app>
 </template>
 
 <script>
@@ -31,18 +33,16 @@
 </script>
 
 <style scoped>
-    .home {
-        padding-left: 248px;
-    }
-
     .header {
       position: fixed;
       width: 100%;
       top: 0;
-      height: 256px;
+      height: 196px;
+      z-index: 10;
     }
     
     .body {
-      margin-top: 256px;
+      position: absolute;
+      top: 196px;
     }
 </style>

@@ -2,6 +2,7 @@
   <v-navigation-drawer
     class="nav"
     v-model="drawer"
+    app
     permanent
     left
     fixed

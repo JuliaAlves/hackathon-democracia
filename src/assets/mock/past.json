@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Gustavo",
+        "avatar": "https://randomuser.me/api/portraits/men/81.jpg",
+        "description": "Lorem ipsum dolor sit amet",
+        "likes": 204,
+        "dislikes": 102
+    },
+    {
+        "name": "Júlia",
+        "avatar": "https://randomuser.me/api/portraits/women/81.jpg",
+        "description": "Lorem ipsum dolor sit amet",
+        "likes": 204,
+        "dislikes": 102
+    },
+    {
+        "name": "Guilherme",
+        "avatar": "https://randomuser.me/api/portraits/men/78.jpg",
+        "description": "Lorem ipsum dolor sit amet",
+        "likes": 204,
+        "dislikes": 102
+    },
+    {
+        "name": "Fernando",
+        "avatar": "https://randomuser.me/api/portraits/men/82.jpg",
+        "description": "Lorem ipsum dolor sit amet",
+        "likes": 204,
+        "dislikes": 102
+    },
+    {
+        "name": "Fulano",
+        "avatar": "https://randomuser.me/api/portraits/men/83.jpg",
+        "description": "Lorem ipsum dolor sit amet",
+        "likes": 204,
+        "dislikes": 102
+    },
+    {
+        "name": "Ciclano",
+        "avatar": "https://randomuser.me/api/portraits/men/84.jpg",
+        "description": "Lorem ipsum dolor sit amet",
+        "likes": 204,
+        "dislikes": 102
+    }
+]
