@@ -2,5 +2,5 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  "publicPath": "/hackaton-democracia"
+  "publicPath": "/hackathon-democracia"
 }
