@@ -40,7 +40,9 @@
                         photo: 'https://randomuser.me/api/portraits/women/81.jpg',
                         likes: 204,
                         dislikes: 102,
-                        comments: []
+                        comments: [
+                          { text: 'ta falando nada com nada minha filha', owner: false , author: "fulano"},
+                        ]
                 },
                 queue: [
                     { checksum: 'fc3ff98e8c6a0d3087d515c0473f8677' },

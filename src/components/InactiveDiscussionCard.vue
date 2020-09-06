@@ -5,7 +5,7 @@
         <v-list dense nav class="py-0">
           <v-list-item two-line>
             <v-list-item-avatar>
-              <img :src="discussion.avatar">
+              <img :src="discussion.photo">
             </v-list-item-avatar>
             <span class="name">{{ discussion.name }}</span>
           </v-list-item>

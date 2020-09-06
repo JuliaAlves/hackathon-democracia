@@ -1,74 +1,74 @@
 [
     {
         "name": "Gustavo",
-        "avatar": "https://randomuser.me/api/portraits/men/81.jpg",
+        "photo": "https://randomuser.me/api/portraits/men/81.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
         "dislikes": 102,
         "comments": [
-          { "text": "discordo disso ae", "owner": false },
-          { "text": "discorda nada", "owner": false },
-          { "text": "bom ponto", "owner": false }
+          { "text": "discordo disso ae", "owner": false , "author":"fulano"},
+          { "text": "discorda nada", "owner": false , "author":"beltrano"},
+          { "text": "bom ponto", "owner": false, "author":"ciclano" }
         ]
     },
     {
         "name": "Júlia",
-        "avatar": "https://randomuser.me/api/portraits/women/81.jpg",
+        "photo": "https://randomuser.me/api/portraits/women/81.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
         "dislikes": 102,
         "comments": [
-          { "text": "discordo disso ae", "owner": false },
-          { "text": "discorda nada", "owner": false },
-          { "text": "bom ponto", "owner": false }
+          { "text": "discordo disso ae", "owner": false , "author":"fulano"},
+          { "text": "discorda nada", "owner": false , "author":"beltrano"},
+          { "text": "bom ponto", "owner": false, "author":"ciclano" }
         ]
     },
     {
         "name": "Guilherme",
-        "avatar": "https://randomuser.me/api/portraits/men/78.jpg",
+        "photo": "https://randomuser.me/api/portraits/men/78.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
         "dislikes": 102,
         "comments": [
-          { "text": "discordo disso ae", "owner": false },
-          { "text": "discorda nada", "owner": false },
-          { "text": "bom ponto", "owner": false }
+          { "text": "discordo disso ae", "owner": false , "author":"fulano"},
+          { "text": "discorda nada", "owner": false , "author":"beltrano"},
+          { "text": "bom ponto", "owner": false, "author":"ciclano" }
         ]
     },
     {
         "name": "Fernando",
-        "avatar": "https://randomuser.me/api/portraits/men/82.jpg",
+        "photo": "https://randomuser.me/api/portraits/men/82.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
         "dislikes": 102,
         "comments": [
-          { "text": "discordo disso ae", "owner": false },
-          { "text": "discorda nada", "owner": false },
-          { "text": "bom ponto", "owner": false }
+          { "text": "discordo disso ae", "owner": false , "author":"fulano"},
+          { "text": "discorda nada", "owner": false , "author":"beltrano"},
+          { "text": "bom ponto", "owner": false, "author":"ciclano" }
         ]
     },
     {
         "name": "Fulano",
-        "avatar": "https://randomuser.me/api/portraits/men/83.jpg",
+        "photo": "https://randomuser.me/api/portraits/men/83.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
         "dislikes": 102,
         "comments": [
-          { "text": "discordo disso ae", "owner": false },
-          { "text": "discorda nada", "owner": false },
-          { "text": "bom ponto", "owner": false }
+          { "text": "discordo disso ae", "owner": false , "author":"fulano"},
+          { "text": "discorda nada", "owner": false , "author":"beltrano"},
+          { "text": "bom ponto", "owner": false, "author":"ciclano" }
         ]
     },
     {
         "name": "Ciclano",
-        "avatar": "https://randomuser.me/api/portraits/men/84.jpg",
+        "photo": "https://randomuser.me/api/portraits/men/84.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
         "dislikes": 102,
         "comments": [
-          { "text": "discordo disso ae", "owner": false },
-          { "text": "discorda nada", "owner": false },
-          { "text": "bom ponto", "owner": false }
+          { "text": "discordo disso ae", "owner": false , "author":"fulano"},
+          { "text": "discorda nada", "owner": false , "author":"beltrano"},
+          { "text": "bom ponto", "owner": false, "author":"ciclano" }
         ]
     }
 ]
