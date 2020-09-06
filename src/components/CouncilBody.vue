@@ -11,22 +11,24 @@
                 </v-col>
             </v-row>
         </div>
-    </div>
+        <QueueAddition @send="addToQueue" />
+  </div>
 </template>
 
 <script>
     import InactiveDiscussionCard from '@/components/InactiveDiscussionCard'
     import ActiveDiscussionCard from '@/components/ActiveDiscussionCard'
     import ViewQueue from '@/components/ViewQueue'
-
-    import past from '@/assets/mock/past.json'
+    import QueueAddition from '@/components/QueueAddition'
+    import past from '@/assets/mock/past.json';
 
     export default {
         name: 'CouncilBody',
         components: {
             InactiveDiscussionCard,
             ActiveDiscussionCard,
-            ViewQueue
+            ViewQueue,
+            QueueAddition
         },
         data () {
             return {
@@ -38,13 +40,17 @@
                         photo: 'https://randomuser.me/api/portraits/women/81.jpg',
                         likes: 204,
                         dislikes: 102
-                }
+                },
+                queue: []
             }
         },
         methods: {
             onScroll (e) {
                 this.offsetTop = e.target.scrollTop
             },
+            addToQueue (discussion) {
+                this.queue.push(JSON.parse(JSON.stringify(discussion)))
+            }
         },
     }
 </script>

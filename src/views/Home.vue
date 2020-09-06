@@ -32,7 +32,7 @@
         components: {
             Navigation,
             CouncilHeader,
-            CouncilBody
+            CouncilBody,
         }
     }
 </script>
