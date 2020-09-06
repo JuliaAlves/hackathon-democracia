@@ -47,7 +47,7 @@
         photo: 'https://randomuser.me/api/portraits/women/81.jpg',
         drawer: true,
         councils: [
-          'Assembleia 20/09',
+          'Assembleia 20/10',
         ]
       }
     }

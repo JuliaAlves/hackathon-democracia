@@ -17,9 +17,9 @@
             temporary
         >
             <v-list
-            dense
-            nav
-            class="py-0"
+                dense
+                nav
+                class="py-0"
             >
                 <v-list-item>
                     <span class="council-name">Discussões na fila</span>
