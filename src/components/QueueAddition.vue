@@ -22,7 +22,7 @@
                 v-model="bundle.name"
             />
             <v-textarea
-                label="Name"
+                label="Comentário"
                 outlined
                 rows="20"
                 v-model="bundle.description"
