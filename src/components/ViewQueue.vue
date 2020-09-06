@@ -50,13 +50,14 @@
 <script>
   export default {
     name: 'ViewQueue',
+    props: {
+        queue: {
+            type: Array,
+            required: true
+        }
+    },
     data: () => ({
-        drawer: false,
-        queue: [
-            'fc3ff98e8c6a0d3087d515c0473f8677',
-            'c2e285cb33cecdbeb83d2189e983a8c0',
-            '459b9511a7f650ebd327889c45cc4e9b'
-        ]
+        drawer: false
     })
   }
 </script>

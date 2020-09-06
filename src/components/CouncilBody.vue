@@ -1,6 +1,6 @@
 <template>
     <div class="council-body">
-        <ViewQueue />
+        <ViewQueue :queue="queue" />
         <div class="active">
             <ActiveDiscussionCard :discussion="current" />
         </div>
@@ -48,8 +48,10 @@
             onScroll (e) {
                 this.offsetTop = e.target.scrollTop
             },
-            addToQueue (discussion) {
-                this.queue.push(JSON.parse(JSON.stringify(discussion)))
+            addToQueue() {
+                var array = new Uint32Array(4);
+                crypto.getRandomValues(array);
+                this.queue.push([...array].map(n => n.toString(16)).join(''))
             }
         },
     }

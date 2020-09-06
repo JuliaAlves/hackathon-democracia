@@ -17,12 +17,12 @@
         <v-card-title class="headline">Entrar na fila para falar</v-card-title>
         <v-card-text>
             <v-text-field
-                label="Name"
+                label="Nome"
                 outlined
                 v-model="bundle.name"
             />
             <v-textarea
-                label="Comentário"
+                label="Descrição"
                 outlined
                 rows="20"
                 v-model="bundle.description"
@@ -38,7 +38,7 @@
 </template>
 <script>
 export default {
-    name: 'QueuAddition',
+    name: 'QueueAddition',
     data: () => ({
         bundle: {
             name: '',
