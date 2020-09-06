@@ -14,9 +14,7 @@
                     </v-list-item>
                     <v-list-item>
                         <v-list-item-icon>
-                            <v-btn icon class="icon">
-                                <v-icon size="30px">mdi-comment</v-icon>
-                            </v-btn>
+                            <ActiveDiscussionChatDialog :discussion="discussion" />
                         </v-list-item-icon>
                         <span class="description">{{ discussion.description }}</span>
                     </v-list-item>
@@ -41,10 +39,15 @@
 </template>
 
 <script>
+    import ActiveDiscussionChatDialog from '@/components/ActiveDiscussionChatDialog'
+
     export default {
         name: 'ActiveDiscussionCard',
         props: {
             discussion: Object
+        },
+        components: {
+          ActiveDiscussionChatDialog
         },
         data () {
             return {}

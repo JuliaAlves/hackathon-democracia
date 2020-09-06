@@ -4,41 +4,71 @@
         "avatar": "https://randomuser.me/api/portraits/men/81.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
-        "dislikes": 102
+        "dislikes": 102,
+        "comments": [
+          { "text": "discordo disso ae", "owner": false },
+          { "text": "discorda nada", "owner": false },
+          { "text": "bom ponto", "owner": false }
+        ]
     },
     {
         "name": "Júlia",
         "avatar": "https://randomuser.me/api/portraits/women/81.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
-        "dislikes": 102
+        "dislikes": 102,
+        "comments": [
+          { "text": "discordo disso ae", "owner": false },
+          { "text": "discorda nada", "owner": false },
+          { "text": "bom ponto", "owner": false }
+        ]
     },
     {
         "name": "Guilherme",
         "avatar": "https://randomuser.me/api/portraits/men/78.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
-        "dislikes": 102
+        "dislikes": 102,
+        "comments": [
+          { "text": "discordo disso ae", "owner": false },
+          { "text": "discorda nada", "owner": false },
+          { "text": "bom ponto", "owner": false }
+        ]
     },
     {
         "name": "Fernando",
         "avatar": "https://randomuser.me/api/portraits/men/82.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
-        "dislikes": 102
+        "dislikes": 102,
+        "comments": [
+          { "text": "discordo disso ae", "owner": false },
+          { "text": "discorda nada", "owner": false },
+          { "text": "bom ponto", "owner": false }
+        ]
     },
     {
         "name": "Fulano",
         "avatar": "https://randomuser.me/api/portraits/men/83.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
-        "dislikes": 102
+        "dislikes": 102,
+        "comments": [
+          { "text": "discordo disso ae", "owner": false },
+          { "text": "discorda nada", "owner": false },
+          { "text": "bom ponto", "owner": false }
+        ]
     },
     {
         "name": "Ciclano",
         "avatar": "https://randomuser.me/api/portraits/men/84.jpg",
         "description": "Lorem ipsum dolor sit amet",
         "likes": 204,
-        "dislikes": 102
+        "dislikes": 102,
+        "comments": [
+          { "text": "discordo disso ae", "owner": false },
+          { "text": "discorda nada", "owner": false },
+          { "text": "bom ponto", "owner": false }
+        ]
     }
 ]
