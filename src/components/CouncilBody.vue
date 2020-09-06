@@ -1,10 +1,6 @@
 <template>
-  <div class="council-body">
-        <v-row class="justify-center">
-            <div class="my-2">
-                <v-btn small color="warning" dark>{{queueSize}} pessoas na fila...</v-btn>
-            </div>
-        </v-row>
+    <div class="council-body">
+        <ViewQueue />
         <div class="active">
             <ActiveDiscussionCard :discussion="current" />
         </div>
@@ -15,19 +11,22 @@
                 </v-col>
             </v-row>
         </div>
-  </div>
+    </div>
 </template>
 
 <script>
     import InactiveDiscussionCard from '@/components/InactiveDiscussionCard'
     import ActiveDiscussionCard from '@/components/ActiveDiscussionCard'
-    import past from '@/assets/mock/past.json';
+    import ViewQueue from '@/components/ViewQueue'
+
+    import past from '@/assets/mock/past.json'
 
     export default {
         name: 'CouncilBody',
         components: {
             InactiveDiscussionCard,
-            ActiveDiscussionCard
+            ActiveDiscussionCard,
+            ViewQueue
         },
         data () {
             return {

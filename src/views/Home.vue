@@ -2,12 +2,8 @@
     <v-app id="home">
         <Navigation />
         <v-main>
+            <CouncilHeader class="header"/>
             <v-container class="fill-height" style="padding: 0;" fluid>
-                <v-row>
-                    <v-col class="col-12">
-                        <CouncilHeader class="header"/>
-                    </v-col>
-                </v-row>
                 <v-row>
                     <v-col class="col-12">
                         <CouncilBody class="body"/>
@@ -15,7 +11,6 @@
                 </v-row>
             </v-container>
         </v-main>
-
         <v-btn
             fixed
             dark
