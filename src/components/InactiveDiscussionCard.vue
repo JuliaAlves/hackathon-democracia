@@ -61,5 +61,10 @@
 <style scoped>
   .card {
     width: 80%;
+    background: #F2F2F2;
+  }
+
+  .v-list {
+    background: #F2F2F2;
   }
 </style>
