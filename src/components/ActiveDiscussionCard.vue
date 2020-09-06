@@ -1,23 +1,26 @@
 <template>
   <v-card class="card">
-        <v-card-text class="card-text">
-            <div>
+    <v-col>
+        <v-list class="py-0">
+            <v-list-item>
                 <span class="discussion"> Em discussão </span>
-            </div>
-            <div class="main-class">
-                <div class="first-grid">
-                    <img :src="discussion.photo" class="photo">
-                    <v-icon class="comment-icon">mdi-comment</v-icon>
-                </div>
-                <div>
-                    <span class="name">{{ discussion.name }}</span>
-                    <span class="description">{{ discussion.description }}</span>
-                </div>
-                <div>
-
-                </div>
-            </div>
-        </v-card-text>
+            </v-list-item>
+            <v-list-item two-line>
+                <v-list-item-avatar>
+                    <img :src="discussion.photo">
+                </v-list-item-avatar>
+                <span class="name">{{ discussion.name }}</span>
+            </v-list-item>
+            <v-list-item>
+                <v-list-item-icon>
+                    <v-btn icon class="icon">
+                        <v-icon>mdi-comment</v-icon>
+                    </v-btn>
+                </v-list-item-icon>
+                <span class="description">{{ discussion.description }}</span>
+            </v-list-item>
+        </v-list>
+    </v-col>
   </v-card>
 </template>
 
@@ -38,20 +41,8 @@
     background-color: #F2F2F2;
 }
 
-.card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.main-class {
-    display: flex;
-    flex-direction: row;
-}
-
-.first-grid {
-    display: flex;
-    flex-direction: column;
+.v-list {
+    background: transparent;
 }
 
 .discussion {
@@ -61,13 +52,13 @@
   font-weight: 500;
 }
 
-.comment-icon {
+.v-icon {
   color: #FD953A;
 }
 
 .name {
     color: #747474;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -76,11 +67,5 @@
     font-size: 16px;
     line-height: 19px;
     color: #747474;
-}
-
-.photo {
-    border-radius: 100%;
-    width: 20%;
-    height: 20%;
 }
 </style>

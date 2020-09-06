@@ -26,7 +26,7 @@
 <style scoped>
 .council-description {
     color: #747474;
-    font-size: 18;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 75%;
