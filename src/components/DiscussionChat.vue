@@ -21,7 +21,7 @@
                 <v-row
                     v-for="(message, index) in discussion.comments"
                     :key="index"
-                    :class="message.owner ? 'message' : 'message'"
+                    :class="message.owner ? 'message flex-row-reverse' : 'message'"
                 >
                     <div :class="message.owner ? 'my-comment' : 'others-comment'">
                         <span class="author">{{ message.author }}</span>

@@ -9,7 +9,7 @@
             </v-btn>
         </div>
         <v-navigation-drawer
-            style="z-index: 20; width: 380px;"
+            style="z-index: 20; width: 400px;"
             v-model="drawer"
             app
             right
@@ -56,18 +56,18 @@
 </template>
 
 <script>
-  export default {
-    name: 'ViewQueue',
-    props: {
-        queue: {
-            type: Array,
-            required: true
-        }
-    },
-    data: () => ({
-        drawer: false
-    })
-  }
+    export default {
+        name: 'ViewQueue',
+        props: {
+            queue: {
+                type: Array,
+                required: true
+            }
+        },
+        data: () => ({
+            drawer: false
+        })
+    }
 </script>
 
 <style scoped>
