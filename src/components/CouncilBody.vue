@@ -7,7 +7,7 @@
         <div class="inactive">
             <v-row v-for="(card, index) of past" :key="index">
                 <v-col class="col-12 d-flex flex-column align-center">
-                    <InactiveDiscussionCard :data="card" />
+                    <InactiveDiscussionItem :discussion="card" />
                 </v-col>
             </v-row>
         </div>
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-    import InactiveDiscussionCard from '@/components/InactiveDiscussionCard'
+    import InactiveDiscussionItem from '@/components/InactiveDiscussionItem'
     import ActiveDiscussionCard from '@/components/ActiveDiscussionCard'
     import ViewQueue from '@/components/ViewQueue'
     import QueueAddition from '@/components/QueueAddition'
@@ -25,7 +25,7 @@
     export default {
         name: 'CouncilBody',
         components: {
-            InactiveDiscussionCard,
+            InactiveDiscussionItem,
             ActiveDiscussionCard,
             ViewQueue,
             QueueAddition
