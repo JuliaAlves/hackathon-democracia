@@ -1,27 +1,37 @@
 <template>
-  <v-card class="card">
-    <v-col>
-        <v-list class="py-0">
-            <v-list-item>
-                <span class="discussion"> Em discussão </span>
-            </v-list-item>
-            <v-list-item two-line>
-                <v-list-item-avatar>
-                    <img :src="discussion.photo">
-                </v-list-item-avatar>
-                <span class="name">{{ discussion.name }}</span>
-            </v-list-item>
-            <v-list-item>
-                <v-list-item-icon>
-                    <v-btn icon class="icon">
-                        <v-icon>mdi-comment</v-icon>
-                    </v-btn>
-                </v-list-item-icon>
-                <span class="description">{{ discussion.description }}</span>
-            </v-list-item>
-        </v-list>
-    </v-col>
-  </v-card>
+    <v-card class="card">
+        <v-row>
+            <v-col class="col-8">
+                <v-list class="py-0">
+                    <v-list-item>
+                        <span class="discussion"> Em discussão </span>
+                    </v-list-item>
+                    <v-list-item two-line>
+                        <v-list-item-avatar>
+                            <img :src="discussion.photo">
+                        </v-list-item-avatar>
+                        <span class="name">{{ discussion.name }}</span>
+                    </v-list-item>
+                    <v-list-item>
+                        <v-list-item-icon>
+                            <v-btn icon class="icon">
+                                <v-icon size="30px">mdi-comment</v-icon>
+                            </v-btn>
+                        </v-list-item-icon>
+                        <span class="description">{{ discussion.description }}</span>
+                    </v-list-item>
+                </v-list>
+            </v-col>
+            <v-col class="col-4 d-flex justify-center align-center">
+                <v-btn icon>
+                    <v-icon size="36px">mdi-thumb-up</v-icon>
+                </v-btn>
+                <v-btn icon>
+                    <v-icon size="36px">mdi-thumb-down</v-icon>
+                </v-btn>
+            </v-col>
+        </v-row>
+    </v-card>
 </template>
 
 <script>
@@ -39,6 +49,7 @@
 <style scoped>
 .card {
     background-color: #F2F2F2;
+    padding: 10px 10px;
 }
 
 .v-list {
@@ -53,7 +64,7 @@
 }
 
 .v-icon {
-  color: #FD953A;
+  color: #FD953A !important;
 }
 
 .name {
@@ -67,5 +78,6 @@
     font-size: 16px;
     line-height: 19px;
     color: #747474;
+    text-align: left !important;
 }
 </style>

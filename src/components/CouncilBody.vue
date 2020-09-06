@@ -5,12 +5,16 @@
                 <v-btn small color="warning" dark>{{queueSize}} pessoas na fila...</v-btn>
             </div>
         </v-row>
-        <ActiveDiscussionCard :discussion="current" />
-        <v-row v-for="(card, index) of past" :key="index">
-            <v-col class="col-12 d-flex flex-column align-center">
-                <InactiveDiscussionCard :data="card" />
-            </v-col>
-        </v-row>
+        <div class="active">
+            <ActiveDiscussionCard :discussion="current" />
+        </div>
+        <div class="inactive">
+            <v-row v-for="(card, index) of past" :key="index">
+                <v-col class="col-12 d-flex flex-column align-center">
+                    <InactiveDiscussionCard :data="card" />
+                </v-col>
+            </v-row>
+        </div>
   </v-container>
 </template>
 
@@ -31,7 +35,7 @@
                 past,
                 current: {
                         name: 'Julia',
-                        description: 'Lorem ipsum dolor sit amet',
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                         photo: 'https://randomuser.me/api/portraits/women/81.jpg',
                         likes: 204,
                         dislikes: 102
@@ -48,4 +52,19 @@
 </script>
 
 <style scoped>
+.active {
+    width: 90%;
+}
+
+.inactive {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.council-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 </style>

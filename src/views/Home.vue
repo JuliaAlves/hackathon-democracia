@@ -47,12 +47,12 @@
       position: fixed;
       width: 100%;
       top: 0;
-      height: 196px;
+      height: 220px;
       z-index: 10;
     }
     
     .body {
       position: absolute;
-      top: 196px;
+      top: 230px;
     }
 </style>
